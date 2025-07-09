@@ -565,7 +565,7 @@ my_skills = ["SQL", "Tableau", "Excel", "Python", "Linux"]
 # Only run this when the script is executed directly (not imported)
 if __name__ == "__main__":
     # You need to replace this with your actual Jooble API key
-    JOOBLE_API_KEY = "fdee36f0-c7ca-4c9a-a4a6-395c4bcaa4b6"
+    JOOBLE_API_KEY = "NULL"
     
     results = search_all_roles(
         my_roles[:2], 
