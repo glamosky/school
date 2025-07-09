@@ -1,0 +1,33 @@
+body{
+    background-color: aqua; margin: 30px; padding: 10px;
+}
+h1{
+    color:rgb(0, 0, 0); font-family: "Cabin", sans-serif; font-size: 50px; 
+    border-style: outset; border-width: 5px; border-color: rgb(119, 115, 115);
+}
+.p1{
+    color:rgb(0, 0, 0); font-family: "Cabin", sans-serif; font-size: 20px;
+    text-shadow: 3px 3px 5px rgb(119, 115, 115);
+}
+.p2{
+    color:rgb(0, 0, 0); font-family: "Cabin", sans-serif; font-size: 20px; 
+    }
+.p4{
+    color:rgb(0, 0, 0); font-family: "Cabin", sans-serif; font-size: 20px; 
+}
+.p3{
+    color:rgb(0, 0, 0); font-family: "Cabin", sans-serif; font-size: 20px;
+}
+.code{
+    color:rgb(0, 0, 0); font-family: "Fira Code", Courier, monospace; font-size: 20px;
+}
+.box{
+    font-family: "Cabin", sans-serif; border: 5px solid rgb(119, 115, 115);
+    font-size: 5em; width: 250px; height: 250px; margin: auto; 
+}
+#box1{
+    background-color: rgb(0, 17, 255); margin-bottom: 30px;
+}
+#box2{
+    background-color: rgb(255, 0, 0);
+}

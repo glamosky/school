@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My first website</title>
+        <link rel="icon" type="image/png" href="/images/train.png">
+    </head>
+    <body>
+
+        <header style="background-color: chocolate;">
+                <h1>My first website</h1>
+                <a href="">Home</a>
+                <a href="">About Us</a>
+                <a href="">Photos</a>
+                <hr>
+        </header>
+
+        <main>
+            <h1>Welcome to my first website!</h1>
+            <h2>This is an h2 heading</h2>
+            <h3>This is an h3 heading</h3>
+            <h4>This is an h4 heading</h4>
+            <h5>This is an h5 heading</h5>
+            <hr>
+
+            <br>
+
+            <p>
+            This is a paragraph. It contains some text to demonstrate 
+            how paragraphs are displayed on a webpage.
+            </p>
+
+            <!--preformatted-->
+            <pre>
+            This is a paragraph. It contains some text to demonstrate 
+            how paragraphs are displayed on a webpage.
+            </pre>
+
+            <!--hyperlink-->
+            <a href="https://www.example.com"
+            target="_blank"
+            title="An example domain">
+            This is a link
+            </a>
+
+            <!--send mail-->
+            <br><br>
+            <a href="mailto:test@fake.com"> 
+            email me   
+            </a>
+
+            <!--image-->
+            <br><br>
+            <a href="https://en.wikipedia.org/wiki/Dog"
+            target="_blank"
+            title="Dog">
+            <img src="/images/dog.jpg" alt="Snow on dog"
+            height="200"/>
+            </a>
+
+            <!--audio-->
+            <br><br>
+            <p>DO NOT PLAY</p>
+            <audio controls> 
+                <source src="D:/Downloads/amanda/Bumaji.m4a">
+            </audio>
+
+            <!--text formatting-->
+            <br><br>
+            <video src="D:/IMPORTANT/Captures/vlc-record-2024-10-10-23h33m29s-Microsoft Flight Simulator-.mp4">
+            </video>
+
+            <br><br>
+                <p>This is normal text</p>
+                <p>This is <b>bold</b> text</p>
+                <p>This is <i>italic</i> text</p>
+                <p>This is <u>underlined</u> text</p>
+                <p>This is <del>strikethrough</del> or <del>deleted</del> text</p>
+                <p>This is <sub>subscript</sub> text</p>
+                <p>This is <sup>superscript</sup> text</p>
+                <p>This is <big>big</big> text</p>
+                <p>This is <small>small</small> text</p>
+                <p>This is <tt>monospaced</tt> text</p>
+                <p>This is <mark style="background-color:blue">marked</mark> text</p>
+
+            <!--span and div-->
+            <br><br>
+            <h1><span style="background-color:yellow;">This is a span title</span></h1>
+            <h1><div style="background-color:cyan;">This is a div title</div></h1>
+
+            <!--unordered list-->
+            <h2>Unordered List</h2>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+            <!--ordered list-->
+            <h2>Ordered List</h2>
+            <ol>
+                <li>eat</li>
+                <li>shower</li>
+                <li>go to work</li>
+            </ol>
+            <!--description list-->
+            <h2>Description List</h2>
+            <dl style="background-color:rgb(168, 195, 204); border:2px solid">
+                <dt>HTML</dt>
+                <dd>Hyper Text Markup Language</dd>
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets</dd>
+                <dt>JavaScript</dt>
+                <dd>Programming language for the web</dd>
+            </dl>
+
+            <!--table-->
+            <br><br>
+            <h2>This is a Table</h2>
+            <table border="3" style="background-color:black; border:2px solid">
+                <tr align="center" style="background-color:lightblue">
+                    <th width="100">First Name</th>
+                    <th width="100">Last Name</th>
+                    <th width="100">Age</th>
+                </tr>
+                <tr align="center" style="background-color:lightgreen">
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>25</td>
+                </tr>
+                <tr align="center" style="background-color:lightgreen">
+                    <td>Mary</td>
+                    <td>Smith</td>
+                    <td>30</td>
+                </tr>
+                <tr align="center" style="background-color:lightgreen">
+                    <td>Mike</td>
+                    <td>Johnson</td>
+                    <td>35</td>
+                </tr>
+            </table>
+
+            <br><br>
+            <!--button-->
+            <button type="button" style="font-size:25px; background-color:yellowgreen; color:blue; border-radius:15px;" onclick="alert('Hello!')">Click Me!</button>
+
+            <br><br>
+            <!--form-->
+            <form action="https://www.example.com" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" minlength="6" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+
+                <label for="male">Male</label>
+                <input type="radio" id="male" value="male" name="gender" required>
+                <label for="female">Female</label>
+                <input type="radio" id="female" value="female" name="gender" required><br><br>
+
+                <label for="region">Region:</label>
+                <select id="region" name="region">
+                    <option value="north">North</option>
+                    <option value="south">South</option>
+                    <option value="east">East</option>
+                    <option value="west">West</option>
+                </select><br><br>
+
+                <input type="submit" value="Submit"><br><br>
+            </main>
+            
+            <footer style="background-color:chocolate; text-align:center;">
+                <hr>
+                <p>Copyright &copy; 2024</p>
+            </footer>
+        </form>
+    </body>
+    
+</html>
