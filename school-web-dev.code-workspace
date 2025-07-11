@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "css basics"
+		},
+		{
+			"path": "html/html activity 1"
+		},
+		{
+			"path": "html/html basics"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "html activity 1"
+	}
+}
