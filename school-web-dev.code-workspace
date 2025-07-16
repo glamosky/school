@@ -1,13 +1,16 @@
 {
 	"folders": [
 		{
-			"path": "css basics"
-		},
-		{
 			"path": "html/html activity 1"
 		},
 		{
 			"path": "html/html basics"
+		},
+		{
+			"path": "css"
+		},
+		{
+			"path": "javascript"
 		}
 	],
 	"settings": {
