@@ -3,41 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Basics</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Flexbox</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            min-height: 100vh;
+        }
+        #header, #main {
+            width: 600px;
+            margin: 0 auto;
+        }
+        #header {
+            display: flex;
+            height: 100px;
+        }
+        #box1 {
+            width: 67%;
+            background-color: #fefe80;
+            border: 3px solid #000;
+        }
+        #box2, #box3 {
+            width: 16.5%;
+            background-color: #00ff00;
+            border: 3px solid #000;
+        }
+        #main {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 1fr 75px;
+            width: 600px;
+            height: 400px;
+            margin: 0 auto;
+        }
+        #top-row {
+            display: contents;
+        }
+        article {
+            background-color: #ff0000;
+            border: 3px solid #000;
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+        #right-column {
+            display: flex;
+            flex-direction: column;
+            grid-column: 2 / 3;
+            grid-row: 1 / 3;
+        }
+        nav {
+            flex: 0 0 60%;
+            background-color: #ff8040;
+            border: 3px solid #000;
+        }
+        aside {
+            flex: 1 1 0;
+            background-color: #fff;
+            border: 3px solid #000;
+        }
+        footer {
+            background-color: #0080ff;
+            border: 3px solid #000;
+            height: 75px;
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+    </style>
 </head>
 <body>
-    <!-- inline, internal, external-->
-
-    <h1>CSS Basics</h1>
-    <p class="p1">This is a paragraph styled with CSS. It has a shadow.</p>
-    <p class="p2">This is another paragraph styled with CSS.</p>
-    <p class="p3">This is a third paragraph styled with CSS.</p>
-    <p class="p4">This is a fourth paragraph styled with CSS.</p>
-    <p class="code">print("Hello, world!")</p><br><br>
-
-    <!-- margins-->
-    <div class="box" id="box1">Box 1</div>
-    <div class="box" id="box2">Box 2</div><br><br>
-
-    <!-- float works just like wrap text in ms word-->
-    <!-- you can use float: left, right-->
-
-    <!-- overflow: visible
-         overflow: hidden
-         overflow: clip
-         overflow: scroll
-         overflow: auto -->
-
-    <!-- display, block level, inline-->
-
-    <!-- position: relative
-         position: fixed
-         position: absolute
-         position: sticky
-         position: static
-        -->
-    
-</body>
+    <div id="header">
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div id="box3"></div>
+    </div>
+    <div id="main">
+        <div id="top-row">
+            <article></article>
+            <div id="right-column">
+                <nav></nav>
+                <aside></aside>
+            </div>
+        </div>
+        <footer></footer>
+    </div>
+  </body>
 </html>

@@ -11,9 +11,12 @@
 		},
 		{
 			"path": "javascript"
+		},
+		{
+			"path": "html/activity 2"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "html activity 1"
+		"liveServer.settings.multiRootWorkspaceName": "activity 2"
 	}
 }
