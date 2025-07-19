@@ -1,10 +1,10 @@
 // Activity 4
 
 // change values of age and isEarlyRegistered for testing
-const age = 19;             // could be any number
+const age = 78;             // could be any number
 const isEarlyRegistered = true;   // true or false
 let raceNumber = Math.floor(Math.random() * 1000);
-const youthRaceNumber = raceNumber - 1000;
+const youthRaceNumber = Math.abs(raceNumber - 1000);
 
 if (age > 18 && isEarlyRegistered) {
     console.log(`Runner ${raceNumber += 1000}, your race will start at 9:30 AM.`); 
