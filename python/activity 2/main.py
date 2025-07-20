@@ -22,6 +22,8 @@ operations = {
     '/': divide
 }
 
+"""Lambda is just like defining a function. The .get(key, fallback) looks for the operator in the dictionary and returns the corresponding function.
+    If the operator is not found, it returns a lambda function that returns "Invalid operator"."""
 result = operations.get(operator, lambda x, y: "Invalid operator")(num1, num2)
 
 print("Result: ", result)
