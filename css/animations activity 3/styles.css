@@ -1,0 +1,103 @@
+/* my own animation */
+.custom {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  animation: spin-meme 3.5s linear infinite;
+}
+
+@keyframes spin-meme {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.fade-box {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  width: 750px;
+  opacity: 0;
+  display: flex;
+  gap: 10px;
+
+.fade-box {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  width: 750px;
+  opacity: 0;
+}
+}
+.loader-ball:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-30px); }
+}
+
+/* fade effect */
+.fade-box {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  width: 750px;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* zoom effect */
+.zoom-box {
+  animation-name: zoomIn;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  width: 750px;
+  opacity: 0;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+/* loader balls */
+.loader {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-ball {
+  width: 50px;
+  height: 50px;
+  animation: bounce 0.8s infinite alternate;
+}
+
+.loader-ball:nth-child(2) { animation-delay: 0.1s; }
+.loader-ball:nth-child(3) { animation-delay: 0.2s; }
+.loader-ball:nth-child(4) { animation-delay: 0.3s; }
+.loader-ball:nth-child(5) { animation-delay: 0.4s; }
+.loader-ball:nth-child(6) { animation-delay: 0.5s; }
+.loader-ball:nth-child(7) { animation-delay: 0.6s; }
+.loader-ball:nth-child(8) { animation-delay: 0.7s; }
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-30px); }
+}

@@ -17,9 +17,12 @@
 		},
 		{
 			"path": "python"
+		},
+		{
+			"path": "css/animations activity 3"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "activity 2"
+		"liveServer.settings.multiRootWorkspaceName": "css"
 	}
 }
