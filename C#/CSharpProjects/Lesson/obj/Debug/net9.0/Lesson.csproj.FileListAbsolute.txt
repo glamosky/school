@@ -1,0 +1,15 @@
+D:\web dev\school\C#\CSharpProjects\Lesson\bin\Debug\net9.0\Lesson.exe
+D:\web dev\school\C#\CSharpProjects\Lesson\bin\Debug\net9.0\Lesson.deps.json
+D:\web dev\school\C#\CSharpProjects\Lesson\bin\Debug\net9.0\Lesson.runtimeconfig.json
+D:\web dev\school\C#\CSharpProjects\Lesson\bin\Debug\net9.0\Lesson.dll
+D:\web dev\school\C#\CSharpProjects\Lesson\bin\Debug\net9.0\Lesson.pdb
+D:\web dev\school\C#\CSharpProjects\Lesson\obj\Debug\net9.0\Lesson.GeneratedMSBuildEditorConfig.editorconfig
+D:\web dev\school\C#\CSharpProjects\Lesson\obj\Debug\net9.0\Lesson.AssemblyInfoInputs.cache
+D:\web dev\school\C#\CSharpProjects\Lesson\obj\Debug\net9.0\Lesson.AssemblyInfo.cs
+D:\web dev\school\C#\CSharpProjects\Lesson\obj\Debug\net9.0\Lesson.csproj.CoreCompileInputs.cache
+D:\web dev\school\C#\CSharpProjects\Lesson\obj\Debug\net9.0\Lesson.sourcelink.json
+D:\web dev\school\C#\CSharpProjects\Lesson\obj\Debug\net9.0\Lesson.dll
+D:\web dev\school\C#\CSharpProjects\Lesson\obj\Debug\net9.0\refint\Lesson.dll
+D:\web dev\school\C#\CSharpProjects\Lesson\obj\Debug\net9.0\Lesson.pdb
+D:\web dev\school\C#\CSharpProjects\Lesson\obj\Debug\net9.0\Lesson.genruntimeconfig.cache
+D:\web dev\school\C#\CSharpProjects\Lesson\obj\Debug\net9.0\ref\Lesson.dll
