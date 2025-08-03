@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "html/activity 2"
+		},
+		{
+			"path": "css"
+		},
+		{
+			"path": "html/cayaco_activity1"
+		},
+		{
+			"path": "../../laragon/www/school/php-school"
+		},
+		{
+			"path": "python/activity 3"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "activity 2"
+	}
+}
