@@ -1,0 +1,15 @@
+D:\web dev\school\CSharp\CSharpProjects\LeapYear\bin\Debug\net9.0\LeapYear.exe
+D:\web dev\school\CSharp\CSharpProjects\LeapYear\bin\Debug\net9.0\LeapYear.deps.json
+D:\web dev\school\CSharp\CSharpProjects\LeapYear\bin\Debug\net9.0\LeapYear.runtimeconfig.json
+D:\web dev\school\CSharp\CSharpProjects\LeapYear\bin\Debug\net9.0\LeapYear.dll
+D:\web dev\school\CSharp\CSharpProjects\LeapYear\bin\Debug\net9.0\LeapYear.pdb
+D:\web dev\school\CSharp\CSharpProjects\LeapYear\obj\Debug\net9.0\LeapYear.GeneratedMSBuildEditorConfig.editorconfig
+D:\web dev\school\CSharp\CSharpProjects\LeapYear\obj\Debug\net9.0\LeapYear.AssemblyInfoInputs.cache
+D:\web dev\school\CSharp\CSharpProjects\LeapYear\obj\Debug\net9.0\LeapYear.AssemblyInfo.cs
+D:\web dev\school\CSharp\CSharpProjects\LeapYear\obj\Debug\net9.0\LeapYear.csproj.CoreCompileInputs.cache
+D:\web dev\school\CSharp\CSharpProjects\LeapYear\obj\Debug\net9.0\LeapYear.sourcelink.json
+D:\web dev\school\CSharp\CSharpProjects\LeapYear\obj\Debug\net9.0\LeapYear.dll
+D:\web dev\school\CSharp\CSharpProjects\LeapYear\obj\Debug\net9.0\refint\LeapYear.dll
+D:\web dev\school\CSharp\CSharpProjects\LeapYear\obj\Debug\net9.0\LeapYear.pdb
+D:\web dev\school\CSharp\CSharpProjects\LeapYear\obj\Debug\net9.0\LeapYear.genruntimeconfig.cache
+D:\web dev\school\CSharp\CSharpProjects\LeapYear\obj\Debug\net9.0\ref\LeapYear.dll
