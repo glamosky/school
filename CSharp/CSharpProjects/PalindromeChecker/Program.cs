@@ -24,7 +24,7 @@ namespace PalindromeChecker
                 // check if input is empty
                 if (input == "" || input == null)
                 {
-                    Console.WriteLine("Please enter a valid word!");
+                    Console.WriteLine("For chrissake enter a valid word!");
                     continue;
                 }
                 
