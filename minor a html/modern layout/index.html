@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Posts</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #ffff00;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            background-color: white;
+            border: 1px solid black;
+            padding: 15px 30px;
+            display: inline-block;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .blog-card {
+            background-color: white;
+            border: 1px solid black;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .blog-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+        }
+
+        .blog-card h2 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: black;
+        }
+
+        .blog-card p {
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            color: black;
+            flex-grow: 1;
+        }
+
+        .blog-card a {
+            color: #0066cc;
+            text-decoration: none;
+            font-size: 14px;
+            align-self: flex-start;
+        }
+
+        .blog-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Desktop styles for screens >= 1440px */
+        @media (min-width: 1440px) {
+            .blog-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 30px;
+            }
+            
+            .blog-card {
+                padding: 25px;
+            }
+            
+            .blog-card h2 {
+                font-size: 20px;
+            }
+            
+            .blog-card p {
+                font-size: 16px;
+            }
+        }
+
+        /* Tablet styles */
+        @media (max-width: 1439px) and (min-width: 768px) {
+            .blog-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 25px;
+            }
+        }
+
+        /* Mobile styles */
+        @media (max-width: 767px) {
+            .blog-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .container {
+                padding: 0 10px;
+            }
+            
+            .header h1 {
+                font-size: 20px;
+                padding: 12px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>My Favorite Films</h1>
+        </header>
+        
+        <div class="blog-grid">
+            <article class="blog-card">
+                <img src="images/Paristexas.jpg" alt="Paris, Texas">
+                <h2>Paris, Texas</h2>
+                <p>A man wanders out of the desert not knowing who he is. His brother finds him, and helps to pull his memory back of the life he led before he walked out on his family and disappeared four years earlier.</p>
+                <a href="https://letterboxd.com/film/paris-texas/" target="_blank">Read more</a>
+            </article>
+            
+            <article class="blog-card">
+                <img src="images/angrymen.jpg" alt="12 Angry Men">
+                <h2>12 Angry Men</h2>
+                <p>The defense and the prosecution have rested and the jury is filing into the jury room to decide if a young Spanish-American is guilty or innocent of murdering his father. What begins as an open and shut case soon becomes a mini-drama of each of the jurors’ prejudices and preconceptions about the trial, the accused, and each other.</p>
+                <a href="https://letterboxd.com/film/12-angry-men/" target="_blank">Read more</a>
+            </article>
+            
+            <article class="blog-card">
+                <img src="images/milkshake.png" alt="There Will Be Blood">
+                <h2>There Will Be Blood</h2>
+                <p>Ruthless silver miner, turned oil prospector, Daniel Plainview, moves to oil-rich California. Using his son to project a trustworthy, family-man image, Plainview cons local landowners into selling him their valuable properties for a pittance. However, local preacher Eli Sunday suspects Plainview’s motives and intentions, starting a slow-burning feud that threatens both their lives.</p>
+                <a href="https://letterboxd.com/film/there-will-be-blood/" target="_blank">Read more</a>
+            </article>
+            
+            <article class="blog-card">
+                <img src="images/solaris.jpg" alt="Solaris">
+                <h2>Solaris</h2>
+                <p>A psychologist is sent to a space station orbiting a planet called Solaris to investigate the death of a doctor and the mental problems of cosmonauts on the station. He soon discovers that the water on the planet is a type of brain which brings out repressed memories and obsessions.</p>
+                <a href="https://letterboxd.com/film/solaris/" target="_blank">Read more</a>
+            </article>
+            
+            <article class="blog-card">
+                <img src="images/isawthedevil.jpg" alt="I Saw the Devil">
+                <h2>I Saw the Devil</h2>
+                <p>Kyung-chul is a dangerous psychopath who kills for pleasure. Soo-hyeon, a top-secret agent, decides to track down the murderer himself. He promises himself that he will do everything in his power to take vengeance against the killer, even if it means that he must become a monster himself.</p>
+                <a href="https://letterboxd.com/film/i-saw-the-devil/" target="_blank">Read more</a>
+            </article>
+            
+            <article class="blog-card">
+                <img src="images/fourthwall.jpg" alt="Memories of Murder">
+                <h2>Memories of Murder</h2>
+                <p>During the late 1980s, two detectives in a South Korean province attempt to solve the nation’s first series of rape-and-murder cases.</p>
+                <a href="https://letterboxd.com/film/memories-of-murder/" target="_blank">Read more</a>
+            </article>
+        </div>
+    </div>
+</body>
+</html>

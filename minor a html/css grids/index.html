@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas: 
+                "header header header"
+                "post-title post-title sidebar"
+                "post-meta main-content sidebar"
+                "post-meta main-image sidebar"
+                "footer footer footer";
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: auto auto 1fr 1fr auto;
+            gap: 10px;
+            min-height: 100vh;
+            padding: 10px;
+        }
+
+        .header {
+            grid-area: header;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 10px;
+        }
+
+        .site-title {
+            background-color: #ffff00;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+            border: 1px solid #000;
+        }
+
+        .navigation {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .nav-item {
+            background-color: #ffc0cb;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #000;
+        }
+
+        .post-title {
+            grid-area: post-title;
+            background-color: #87ceeb;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #000;
+        }
+
+        .post-meta {
+            grid-area: post-meta;
+            background-color: #90ee90;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #000;
+        }
+
+        .main-content {
+            grid-area: main-content;
+            background-color: #808080;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #000;
+        }
+
+        .main-image {
+            grid-area: main-image;
+            background-color: #ffff00;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #000;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            display: grid;
+            grid-template-rows: auto auto auto;
+            gap: 10px;
+        }
+
+        .side-bar {
+            background-color: #ffa500;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #000;
+        }
+
+        .ads {
+            background-color: #006400;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #000;
+            color: white;
+        }
+
+        .other-stuffs {
+            background-color: #800080;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #000;
+            color: white;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: #8b4513;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #000;
+            color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-areas: 
+                    "header"
+                    "post-title"
+                    "post-meta"
+                    "main-content"
+                    "main-image"
+                    "sidebar"
+                    "footer";
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto auto auto auto auto auto;
+            }
+
+            .header {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto;
+            }
+
+            .navigation {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(3, auto);
+            }
+
+            .sidebar {
+                grid-template-rows: auto auto auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="site-title">Site Title</div>
+            <nav class="navigation">
+                <div class="nav-item">Nav 1</div>
+                <div class="nav-item">Nav 2</div>
+                <div class="nav-item">Nav 3</div>
+            </nav>
+        </header>
+
+        <div class="post-title">Post Title</div>
+
+        <div class="post-meta">Post Meta</div>
+
+        <div class="main-content">Main Content</div>
+
+        <div class="main-image">Main Content Image</div>
+
+        <aside class="sidebar">
+            <div class="side-bar">Side Bar</div>
+            <div class="ads">Ads</div>
+            <div class="other-stuffs">Other Stuffs</div>
+        </aside>
+
+        <footer class="footer">@2018 footer</footer>
+    </div>
+</body>
+</html>

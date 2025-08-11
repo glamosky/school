@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple 3D Cube</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #2c2c2c;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .cube-container {
+            perspective: 800px;
+        }
+
+        .cube {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            transform-style: preserve-3d;
+            transform: rotateX(-20deg) rotateY(-30deg);
+        }
+
+        .face {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border: 2px solid #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: white;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+        }
+
+        .front {
+            background-color: #ff6b6b;
+            transform: translateZ(50px);
+        }
+
+        .back {
+            background-color: #4ecdc4;
+            transform: translateZ(-50px) rotateY(180deg);
+        }
+
+        .right {
+            background-color: #45b7d1;
+            transform: translateX(50px) rotateY(90deg);
+        }
+
+        .left {
+            background-color: #96ceb4;
+            transform: translateX(-50px) rotateY(-90deg);
+        }
+
+        .top {
+            background-color: #feca57;
+            transform: translateY(-50px) rotateX(90deg);
+        }
+
+        .bottom {
+            background-color: #ff9ff3;
+            transform: translateY(50px) rotateX(-90deg);
+        }
+
+        .info {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            text-align: center;
+            background: rgba(0,0,0,0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .info h1 {
+            margin-bottom: 10px;
+            color: #ffd700;
+        }
+
+        .info p {
+            line-height: 1.6;
+        }
+
+        /* ===== COMPLEX VERSION (COMMENTED OUT FOR LEARNING) ===== */
+        /*
+        .container {
+            display: flex;
+            gap: 100px;
+            align-items: center;
+        }
+
+        .cube {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            transform-style: preserve-3d;
+        }
+
+        .cube:nth-child(1) {
+            transform: rotateX(-20deg) rotateY(-45deg);
+        }
+
+        .cube:nth-child(2) {
+            transform: rotateX(20deg) rotateY(45deg);
+        }
+
+        .face {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border: 2px solid #333;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 2px;
+            padding: 2px;
+        }
+
+        .square {
+            border: 1px solid #333;
+            border-radius: 2px;
+        }
+
+        .front .square { background-color: #ffffff; }
+        .back .square { background-color: #ffff00; }
+        .right .square { background-color: #ff0000; }
+        .left .square { background-color: #ff8c00; }
+        .top .square { background-color: #0000ff; }
+        .bottom .square { background-color: #00ff00; }
+
+        .cube:nth-child(2) .front .square { background-color: #ff0000; }
+        .cube:nth-child(2) .back .square { background-color: #0000ff; }
+        .cube:nth-child(2) .right .square { background-color: #ffff00; }
+        .cube:nth-child(2) .left .square { background-color: #00ff00; }
+        .cube:nth-child(2) .top .square { background-color: #ff8c00; }
+        .cube:nth-child(2) .bottom .square { background-color: #ffffff; }
+        */
+    </style>
+</head>
+<body>
+    <div class="info">
+        <h1>🎲 Simple 3D Cube</h1>
+        <p>This cube uses basic CSS 3D transforms</p>
+        <p>Each face has a different color and position</p>
+    </div>
+
+    <div class="cube-container">
+        <div class="cube">
+            <div class="face front">FRONT</div>
+            <div class="face back">BACK</div>
+            <div class="face right">RIGHT</div>
+            <div class="face left">LEFT</div>
+            <div class="face top">TOP</div>
+            <div class="face bottom">BOTTOM</div>
+        </div>
+    </div>
+
+    <!-- ===== COMPLEX VERSION HTML (COMMENTED OUT FOR LEARNING) ===== -->
+    <!--
+    <div class="container">
+        <div class="cube">
+            <div class="face front">
+                <div class="square"></div><div class="square"></div><div class="square"></div>
+                <div class="square"></div><div class="square"></div><div class="square"></div>
+                <div class="square"></div><div class="square"></div><div class="square"></div>
+            </div>
+            <div class="face back">
+                <div class="square"></div><div class="square"></div><div class="square"></div>
+                <div class="square"></div><div class="square"></div><div class="square"></div>
+                <div class="square"></div><div class="square"></div><div class="square"></div>
+            </div>
+            <div class="face right">
+                <div class="square"></div><div class="square"></div><div class="square"></div>
+                <div class="square"></div><div class="square"></div><div class="square"></div>
+                <div class="square"></div><div class="square"></div><div class="square"></div>
+            </div>
+            <div class="face left">
+                <div class="square"></div><div class="square"></div><div class="square"></div>
+                <div class="square"></div><div class="square"></div><div class="square"></div>
+                <div class="square"></div><div class="square"></div><div class="square"></div>
+            </div>
+            <div class="face top">
+                <div class="square"></div><div class="square"></div><div class="square"></div>
+                <div class="square"></div><div class="square"></div><div class="square"></div>
+                <div class="square"></div><div class="square"></div><div class="square"></div>
+            </div>
+            <div class="face bottom">
+                <div class="square"></div><div class="square"></div><div class="square"></div>
+                <div class="square"></div><div class="square"></div><div class="square"></div>
+                <div class="square"></div><div class="square"></div><div class="square"></div>
+            </div>
+        </div>
+
+        <div class="cube">
+            <div class="face front">
+                <div class="square"></div><div class="square"></div><div class="square"></div>
+                <div class="square"></div><div class="square"></div><div class="square"></div>
+                <div class="square"></div><div class="square"></div><div class="square"></div>
+            </div>
+            <div class="face back">
+                <div class="square"></div><div class="square"></div><div class="square"></div>
+                <div class="square"></div><div class="square"></div><div class="square"></div>
+                <div class="square"></div><div class="square"></div><div class="square"></div>
+            </div>
+            <div class="face right">
+                <div class="square"></div><div class="square"></div><div class="square"></div>
+                <div class="square"></div><div class="square"></div><div class="square"></div>
+                <div class="square"></div><div class="square"></div><div class="square"></div>
+            </div>
+            <div class="face left">
+                <div class="square"></div><div class="square"></div><div class="square"></div>
+                <div class="square"></div><div class="square"></div><div class="square"></div>
+                <div class="square"></div><div class="square"></div><div class="square"></div>
+            </div>
+            <div class="face top">
+                <div class="square"></div><div class="square"></div><div class="square"></div>
+                <div class="square"></div><div class="square"></div><div class="square"></div>
+                <div class="square"></div><div class="square"></div><div class="square"></div>
+            </div>
+            <div class="face bottom">
+                <div class="square"></div><div class="square"></div><div class="square"></div>
+                <div class="square"></div><div class="square"></div><div class="square"></div>
+                <div class="square"></div><div class="square"></div><div class="square"></div>
+            </div>
+        </div>
+    </div>
+    -->
+</body>
+</html>

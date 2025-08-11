@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "modern layout"
+		},
+		{
+			"path": "css grids"
+		},
+		{
+			"path": "bonus"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "bonus"
+	}
+}
