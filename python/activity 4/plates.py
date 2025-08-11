@@ -1,23 +1,25 @@
+# activity 4 cayaco
+
 def is_valid(s):
-    # Check length (2-6 characters)
+    # check len (2-6 characters only)
     if not (2 <= len(s) <= 6):
         return False
     
-    # Check that first 2 characters are letters
+    # check that first 2 characters are letters
     if not s[:2].isalpha():
         return False
     
-    # Check that all characters are alphanumeric (no punctuation)
+    # check that all characters are alphanumeric (no punctuation)
     if not s.isalnum():
         return False
     
-    # Check for numbers - they must come at the end and first number cannot be '0'
+    # numbers must come at the end and first number cannot be '0'
     for i, c in enumerate(s):
         if c.isdigit():
-            # First number cannot be '0'
+            # first number cannot be '0'
             if c == '0':
                 return False
-            # All remaining characters must be digits
+            # all remaining characters must be digits
             if not s[i:].isdigit():
                 return False
             break
