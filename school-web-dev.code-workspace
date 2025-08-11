@@ -35,6 +35,9 @@
 		},
 		{
 			"path": "CSharp/CSharpProjects/PalindromeChecker"
+		},
+		{
+			"path": "CSharp/CSharpProjects/GaussianElimination"
 		}
 	],
 	"settings": {
