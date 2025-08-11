@@ -1,0 +1,15 @@
+D:\web dev\school\CSharp\CSharpProjects\PalindromeChecker\bin\Debug\net9.0\PalindromeChecker.exe
+D:\web dev\school\CSharp\CSharpProjects\PalindromeChecker\bin\Debug\net9.0\PalindromeChecker.deps.json
+D:\web dev\school\CSharp\CSharpProjects\PalindromeChecker\bin\Debug\net9.0\PalindromeChecker.runtimeconfig.json
+D:\web dev\school\CSharp\CSharpProjects\PalindromeChecker\bin\Debug\net9.0\PalindromeChecker.dll
+D:\web dev\school\CSharp\CSharpProjects\PalindromeChecker\bin\Debug\net9.0\PalindromeChecker.pdb
+D:\web dev\school\CSharp\CSharpProjects\PalindromeChecker\obj\Debug\net9.0\PalindromeChecker.GeneratedMSBuildEditorConfig.editorconfig
+D:\web dev\school\CSharp\CSharpProjects\PalindromeChecker\obj\Debug\net9.0\PalindromeChecker.AssemblyInfoInputs.cache
+D:\web dev\school\CSharp\CSharpProjects\PalindromeChecker\obj\Debug\net9.0\PalindromeChecker.AssemblyInfo.cs
+D:\web dev\school\CSharp\CSharpProjects\PalindromeChecker\obj\Debug\net9.0\PalindromeChecker.csproj.CoreCompileInputs.cache
+D:\web dev\school\CSharp\CSharpProjects\PalindromeChecker\obj\Debug\net9.0\PalindromeChecker.sourcelink.json
+D:\web dev\school\CSharp\CSharpProjects\PalindromeChecker\obj\Debug\net9.0\PalindromeChecker.dll
+D:\web dev\school\CSharp\CSharpProjects\PalindromeChecker\obj\Debug\net9.0\refint\PalindromeChecker.dll
+D:\web dev\school\CSharp\CSharpProjects\PalindromeChecker\obj\Debug\net9.0\PalindromeChecker.pdb
+D:\web dev\school\CSharp\CSharpProjects\PalindromeChecker\obj\Debug\net9.0\PalindromeChecker.genruntimeconfig.cache
+D:\web dev\school\CSharp\CSharpProjects\PalindromeChecker\obj\Debug\net9.0\ref\PalindromeChecker.dll
