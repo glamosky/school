@@ -26,6 +26,9 @@
 		},
 		{
 			"path": "CSharp"
+		},
+		{
+			"path": "html/exams"
 		}
 	],
 	"settings": {
