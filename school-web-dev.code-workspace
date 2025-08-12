@@ -26,6 +26,15 @@
 		},
 		{
 			"path": "CSharp"
+		},
+		{
+			"path": "python/activity 4"
+		},
+		{
+			"path": "CSharp/CSharpProjects/PalindromeChecker"
+		},
+		{
+			"path": "CSharp/CSharpProjects/GaussianElimination"
 		}
 	],
 	"settings": {
