@@ -35,9 +35,12 @@
 		},
 		{
 			"path": "CSharp/CSharpProjects/GaussianElimination"
+		},
+		{
+			"path": "html/exams/minor a html"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "css"
+		"liveServer.settings.multiRootWorkspaceName": "minor a html"
 	}
 }
