@@ -11,7 +11,7 @@ from tabulate import tabulate
 
     # Bonus
     - *Buy*
-    - *Add stock*
+    - *Add sock*
 """
 
 # Multi dimensional array/ List
@@ -77,7 +77,9 @@ def manage_inventory():
 
 
 def list_items():
-    """List all the items in the item_list."""
+    """
+    List all the items in the item_list.
+    """
     if not item_list:
         print("Inventory is empty.")
         return
@@ -102,8 +104,10 @@ def list_items():
 
 
 def add_item():
-    """Add an item with the following info: id (automatically generated), name, price, and quantity.
-    If an item already exists, return an error."""
+    """
+    Add an item with the following info: id (automatically generated), name, price, and quantity.
+    If an item already exists, return an error.
+    """
     print("\n" + "="*50)
     print("ADD NEW ITEM")
     print("="*50)
@@ -152,8 +156,10 @@ def add_item():
 
 
 def update_item():
-    """Update an item by listing all the items then prompting for an item id to update.
-    If the id does not exist, return an error."""
+    """
+    Update an item by listing all the items then prompting for an item id to update.
+    If the id does not exist, return an error.
+    """
     print("\n" + "="*50)
     print("UPDATE ITEM")
     print("="*50)
@@ -220,8 +226,10 @@ def update_item():
 
 
 def delete_item():
-    """Delete an item by listing all the items then prompting for an item id to delete.
-    If the id does not exist, return an error."""
+    """
+    Delete an item by listing all the items then prompting for an item id to delete.
+    If the id does not exist, return an error.
+    """
     print("\n" + "="*50)
     print("DELETE ITEM")
     print("="*50)
@@ -246,7 +254,9 @@ def delete_item():
 
 
 def check_stocks():
-    """Displays all items which stocks are less than 10."""
+    """
+    Displays all items which stocks are less than 10.
+    """
     print("\n" + "="*50)
     print("LOW STOCK ITEMS")
     print("="*50)
@@ -272,9 +282,11 @@ def check_stocks():
 
 # =========================== Bonus Function =========================== #
 def buy_item():
-    """Displays all the items and their information.
+    """
+    Displays all the items and their information.
     Prompt for an item id then the quantity that they want to buy.
-    If the requested quantity is greater than the available stocks, return an error."""
+    If the requested quantity is greater than the available stocks, return an error.
+    """
     print("\n" + "="*50)
     print("BUY ITEM")
     print("="*50)
@@ -322,7 +334,9 @@ def buy_item():
 
 
 def add_stock():
-    """Add stock to existing items"""
+    """
+    Add stock to existing items
+    """
     print("\n" + "="*50)
     print("ADD STOCK")
     print("="*50)
@@ -365,7 +379,9 @@ def add_stock():
 
 # =========================== Helper Function =========================== #
 def helper():
-    """Calls when in need of simplifying a procedure."""
+    """
+    Calls when in need of simplifying a procedure.
+    """
     pass
 
 
