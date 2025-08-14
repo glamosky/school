@@ -9,12 +9,12 @@ namespace GaussianElimination
             Console.WriteLine("=== Gaussian Elimination Calculator ===");
             Console.WriteLine("This program solves systems of linear equations");
             
-            // Get the size of the system (number of equations)
+            // get the size of the system (number of equations)
             Console.Write("Enter number of equations (2 or 3): ");
             string sizeInput = Console.ReadLine();
             int size = 0;
             
-            // Convert input to number
+            // convert input to number
             if (sizeInput == "2")
                 size = 2;
             else if (sizeInput == "3")
@@ -25,10 +25,10 @@ namespace GaussianElimination
                 return;
             }
             
-            // Create arrays to store the augmented matrix
+            // create arrays to store the augmented matrix
             double[,] matrix = new double[size, size + 1];
             
-            // Get coefficients from user
+            // get coefficients from user
             Console.WriteLine("\nEnter the coefficients:");
             for (int i = 0; i < size; i++)
             {
@@ -44,19 +44,19 @@ namespace GaussianElimination
                 matrix[i, size] = ConvertToDouble(constInput);
             }
             
-            // Display the original system
+            // display the original system
             Console.WriteLine("\n=== Original System ===");
             DisplaySystem(matrix, size);
             
-            // Perform Gaussian elimination
+            // perform Gaussian elimination
             bool success = GaussianEliminate(matrix, size);
             
             if (success)
             {
-                // Back substitution to find solutions
+                // back substitution to find solutions
                 double[] solutions = BackSubstitute(matrix, size);
                 
-                // Display results
+                // display results
                 Console.WriteLine("\n=== Solution ===");
                 for (int i = 0; i < size; i++)
                 {
@@ -69,7 +69,7 @@ namespace GaussianElimination
             }
         }
         
-        // Convert string input to double
+        // convert string input to double
         static double ConvertToDouble(string input)
         {
             double result = 0;
@@ -77,10 +77,10 @@ namespace GaussianElimination
                 result = 0;
             else
             {
-                // Simple conversion - in real programs you'd use double.TryParse()
+                // simple conversion - in real programs you'd use double.TryParse()
                 if (input.Contains("."))
                 {
-                    // Handle decimal numbers
+                    // handle decimal numbers
                     string[] parts = input.Split('.');
                     int whole = 0;
                     int decimal_part = 0;
@@ -100,7 +100,7 @@ namespace GaussianElimination
             return result;
         }
         
-        // Display the system of equations
+        // display the system of equations
         static void DisplaySystem(double[,] matrix, int size)
         {
             for (int i = 0; i < size; i++)
@@ -116,13 +116,13 @@ namespace GaussianElimination
             }
         }
         
-        // Perform Gaussian elimination
+        // perform Gaussian elimination
         static bool GaussianEliminate(double[,] matrix, int size)
         {
             // Forward elimination
             for (int i = 0; i < size; i++)
             {
-                // Find pivot (largest element in current column)
+                // find pivot (largest element in current column)
                 int maxRow = i;
                 for (int k = i + 1; k < size; k++)
                 {
@@ -132,7 +132,7 @@ namespace GaussianElimination
                     }
                 }
                 
-                // Swap rows if necessary
+                // swap rows if necessary
                 if (maxRow != i)
                 {
                     for (int j = 0; j <= size; j++)
@@ -143,13 +143,13 @@ namespace GaussianElimination
                     }
                 }
                 
-                // Check if pivot is zero (singular matrix)
+                // check if pivot is zero (singular matrix)
                 if (Math.Abs(matrix[i, i]) < 0.0001)
                 {
                     return false; // No unique solution
                 }
                 
-                // Eliminate column below pivot
+                // eliminate column below pivot
                 for (int k = i + 1; k < size; k++)
                 {
                     double factor = matrix[k, i] / matrix[i, i];
@@ -163,12 +163,12 @@ namespace GaussianElimination
             return true;
         }
         
-        // Back substitution to find solutions
+        // back substitution to find solutions
         static double[] BackSubstitute(double[,] matrix, int size)
         {
             double[] solutions = new double[size];
             
-            // Start from the last equation
+            // start from the last equation
             for (int i = size - 1; i >= 0; i--)
             {
                 double sum = 0;
@@ -182,13 +182,13 @@ namespace GaussianElimination
             return solutions;
         }
         
-        // Method to check if a number is close to zero
+        // method to check if a number is close to zero
         static bool IsZero(double number)
         {
             return Math.Abs(number) < 0.0001;
         }
         
-        // Method to display the matrix (for debugging)
+        // method to display the matrix (for debugging)
         static void DisplayMatrix(double[,] matrix, int size)
         {
             Console.WriteLine("\n=== Matrix ===");
@@ -199,6 +199,9 @@ namespace GaussianElimination
                     Console.Write(matrix[i, j] + " ");
                 }
                 Console.WriteLine();
+
+                
+                /* THIS IS SO DIFFICULT */
             }
         }
     }
