@@ -1,0 +1,15 @@
+D:\web dev\school\CSharp\CSharpProjects\GaussianElimination\bin\Debug\net9.0\GaussianElimination.exe
+D:\web dev\school\CSharp\CSharpProjects\GaussianElimination\bin\Debug\net9.0\GaussianElimination.deps.json
+D:\web dev\school\CSharp\CSharpProjects\GaussianElimination\bin\Debug\net9.0\GaussianElimination.runtimeconfig.json
+D:\web dev\school\CSharp\CSharpProjects\GaussianElimination\bin\Debug\net9.0\GaussianElimination.dll
+D:\web dev\school\CSharp\CSharpProjects\GaussianElimination\bin\Debug\net9.0\GaussianElimination.pdb
+D:\web dev\school\CSharp\CSharpProjects\GaussianElimination\obj\Debug\net9.0\GaussianElimination.GeneratedMSBuildEditorConfig.editorconfig
+D:\web dev\school\CSharp\CSharpProjects\GaussianElimination\obj\Debug\net9.0\GaussianElimination.AssemblyInfoInputs.cache
+D:\web dev\school\CSharp\CSharpProjects\GaussianElimination\obj\Debug\net9.0\GaussianElimination.AssemblyInfo.cs
+D:\web dev\school\CSharp\CSharpProjects\GaussianElimination\obj\Debug\net9.0\GaussianElimination.csproj.CoreCompileInputs.cache
+D:\web dev\school\CSharp\CSharpProjects\GaussianElimination\obj\Debug\net9.0\GaussianElimination.sourcelink.json
+D:\web dev\school\CSharp\CSharpProjects\GaussianElimination\obj\Debug\net9.0\GaussianElimination.dll
+D:\web dev\school\CSharp\CSharpProjects\GaussianElimination\obj\Debug\net9.0\refint\GaussianElimination.dll
+D:\web dev\school\CSharp\CSharpProjects\GaussianElimination\obj\Debug\net9.0\GaussianElimination.pdb
+D:\web dev\school\CSharp\CSharpProjects\GaussianElimination\obj\Debug\net9.0\GaussianElimination.genruntimeconfig.cache
+D:\web dev\school\CSharp\CSharpProjects\GaussianElimination\obj\Debug\net9.0\ref\GaussianElimination.dll
