@@ -100,12 +100,13 @@ def manage_inventory():
     5. List low stocks
     6. Buy item (Bonus)
     7. Add stock (Bonus)
-    8. Exit
+    8. Randomize Inventory (Bonus)
+    9. Exit
         """
         )
 
         try:
-            action = int(input("Enter 1-8 to perform desired function: "))
+            action = int(input("Enter 1-9 to perform desired function: "))
             
             if action == 1:
                 list_items()
@@ -122,10 +123,12 @@ def manage_inventory():
             elif action == 7:
                 add_stock()
             elif action == 8:
+                randomize_inventory()
+            elif action == 9:
                 print("Thank you for using the Inventory Management System!")
                 break
             else:
-                print("Invalid option. Please enter a number between 1-8.")
+                print("Invalid option. Please enter a number between 1-9.")
                 
         except ValueError:
             print("Invalid input. Please enter a valid number.")
@@ -441,6 +444,30 @@ def helper():
     Calls when in need of simplifying a procedure.
     """
     pass
+
+
+def randomize_inventory():
+    """
+    I decided to just write it here instead. Randomize prices and quantities for all items in the inventory.
+    This helper function uses the same logic as randomizer.py.
+    """
+    import random
+    
+    print("\n" + "="*50)
+    print("RANDOMIZE INVENTORY")
+    print("="*50)
+    
+    # prices
+    price_choices = [20, 40, 60, 100]
+    
+    # randomize each item
+    for item in item_list:
+        item["price"] = random.choice(price_choices)
+        item["quantity"] = random.randint(10, 100)
+    
+    print("Inventory has been randomized!")
+    print("All items now have random prices ($20, $40, $60, or $100) and quantities (10-100).")
+    print("Use 'List items' to see the updated inventory.")
 
 
 manage_inventory()
