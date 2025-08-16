@@ -1,6 +1,6 @@
 // Euclidean Distance Calculator using Closures
 function getDistanceCalculator(x1, y1) {
-    // This closure remembers the coordinates of point A (x1, y1)
+    // This closure remembers the coordinates of point A (x1, y1). It makes sure that the coordinates of point A are not changed.
     return function(x2, y2) {
         // Calculate Euclidean distance using Pythagoras's theorem
         const deltaX = x2 - x1;
