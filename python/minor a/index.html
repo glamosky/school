@@ -1,0 +1,121 @@
+ 
+
+    <div class="broken-grid-container">
+        <div class="grid-item">Item 1</div>
+        <div class="grid-item">Item 2</div>
+        <div class="grid-item">Item 3</div>
+        <div class="grid-item">Item 4</div>
+        <div class="grid-item">Item 5</div>
+        <div class="grid-item">Item 6</div>
+    </div>
+
+    <style>
+    .broken-grid-container {
+        display: grid;
+        grid-template-columns: 200px 300px; /* random sizes that don't make sense */
+        grid-template-rows: auto; /* this is wrong */
+        gap: 10px 20px; /* mixed up gap values */
+        justify-content: center; /* but no width specified */
+        align-items: stretch; /* conflicts with other properties */
+        grid-area: main; /* this doesn't belong here */
+        position: relative; /* unnecessary */
+        z-index: 1; /* why? */
+    }
+
+    .grid-item {
+        background-color: #f0f0f0;
+        padding: 15px;
+        border: 2px solid #333;
+        text-align: center;
+        grid-column: span 2; /* this will break everything */
+        grid-row: 1 / 3; /* overlapping rows */
+        margin: 5px; /* conflicts with gap */
+        float: left; /* don't use float with grid! */
+        clear: both; /* unnecessary */
+        display: inline-block; /* conflicts with grid */
+        width: 100%; /* redundant */
+        height: 50px; /* fixed height might cause issues */
+        overflow: hidden; /* might cut off content */
+        box-sizing: border-box; /* good practice but placement is wrong */
+    }
+
+    /* This media query is completely wrong */
+    @media (max-width: 768px) {
+        .broken-grid-container {
+            grid-template-columns: 1fr 1fr 1fr; /* 3 columns on mobile? */
+            grid-template-rows: repeat(3, 100px); /* fixed heights */
+            gap: 5px; /* different gap */
+            justify-items: center; /* conflicts with justify-content */
+            align-content: space-between; /* another conflict */
+        }
+        
+        .grid-item {
+            grid-column: 1 / -1; /* spans all columns */
+            grid-row: auto; /* this is wrong */
+            width: 80%; /* percentage without parent context */
+            margin: 0 auto; /* conflicts with grid */
+        }
+    }
+
+    /* Random CSS that doesn't belong here */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background: linear-gradient(45deg, #ff6b6b, #4ecdc4); /* distracting background */
+    }
+
+    /* This class doesn't exist in the HTML */
+    .non-existent-class {
+        color: red;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    /* Broken flexbox mixed with grid */
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        grid-template-columns: 1fr 1fr; /* mixing flex and grid */
+        gap: 10px;
+    }
+
+    /* CSS variables that are never used */
+    :root {
+        --primary-color: #007bff;
+        --secondary-color: #6c757d;
+        --grid-gap: 20px;
+        --border-radius: 5px;
+    }
+
+    /* Animation that doesn't work */
+    @keyframes broken-animation {
+        0% { transform: translateX(0); }
+        50% { transform: translateY(100px); }
+        100% { transform: rotate(360deg); }
+    }
+
+    .grid-item:hover {
+        animation: broken-animation 2s infinite; /* annoying animation */
+        background-color: var(--primary-color); /* undefined variable */
+        border-radius: var(--border-radius); /* undefined variable */
+    }
+    </style>
+
+    <!-- This code is intentionally broken and demonstrates what NOT to do with CSS Grid.
+    Problems include:
+    - Mixed display properties (grid + flex + inline-block)
+    - Conflicting alignment properties
+    - Wrong grid-area usage
+    - Unnecessary positioning
+    - Conflicting margins and gaps
+    - Broken media queries
+    - Undefined CSS variables
+    - Annoying animations
+    - Poor responsive design
+    - Inconsistent naming conventions
+
+    If you try to use this, nothing will work properly and it will be a nightmare to debug.
+    -->
