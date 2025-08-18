@@ -8,19 +8,19 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\franj\\.nuget\\packages\\": {}
+    "C:\\Users\\Student\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\web dev\\school\\CSharp\\CSharpProjects\\GaussianElimination\\GaussianElimination.csproj",
+      "projectUniqueName": "C:\\Users\\Student\\Documents\\frank\\school\\CSharp\\CSharpProjects\\GaussianElimination\\GaussianElimination.csproj",
       "projectName": "GaussianElimination",
-      "projectPath": "D:\\web dev\\school\\CSharp\\CSharpProjects\\GaussianElimination\\GaussianElimination.csproj",
-      "packagesPath": "C:\\Users\\franj\\.nuget\\packages\\",
-      "outputPath": "D:\\web dev\\school\\CSharp\\CSharpProjects\\GaussianElimination\\obj\\",
+      "projectPath": "C:\\Users\\Student\\Documents\\frank\\school\\CSharp\\CSharpProjects\\GaussianElimination\\GaussianElimination.csproj",
+      "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Student\\Documents\\frank\\school\\CSharp\\CSharpProjects\\GaussianElimination\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\franj\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Student\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
