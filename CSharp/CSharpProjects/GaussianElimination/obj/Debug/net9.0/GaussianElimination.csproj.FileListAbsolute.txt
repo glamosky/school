@@ -13,3 +13,18 @@ D:\web dev\school\CSharp\CSharpProjects\GaussianElimination\obj\Debug\net9.0\ref
 D:\web dev\school\CSharp\CSharpProjects\GaussianElimination\obj\Debug\net9.0\GaussianElimination.pdb
 D:\web dev\school\CSharp\CSharpProjects\GaussianElimination\obj\Debug\net9.0\GaussianElimination.genruntimeconfig.cache
 D:\web dev\school\CSharp\CSharpProjects\GaussianElimination\obj\Debug\net9.0\ref\GaussianElimination.dll
+C:\Users\Student\Documents\frank\school\CSharp\CSharpProjects\GaussianElimination\bin\Debug\net9.0\GaussianElimination.exe
+C:\Users\Student\Documents\frank\school\CSharp\CSharpProjects\GaussianElimination\bin\Debug\net9.0\GaussianElimination.deps.json
+C:\Users\Student\Documents\frank\school\CSharp\CSharpProjects\GaussianElimination\bin\Debug\net9.0\GaussianElimination.runtimeconfig.json
+C:\Users\Student\Documents\frank\school\CSharp\CSharpProjects\GaussianElimination\bin\Debug\net9.0\GaussianElimination.dll
+C:\Users\Student\Documents\frank\school\CSharp\CSharpProjects\GaussianElimination\bin\Debug\net9.0\GaussianElimination.pdb
+C:\Users\Student\Documents\frank\school\CSharp\CSharpProjects\GaussianElimination\obj\Debug\net9.0\GaussianElimination.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Student\Documents\frank\school\CSharp\CSharpProjects\GaussianElimination\obj\Debug\net9.0\GaussianElimination.AssemblyInfoInputs.cache
+C:\Users\Student\Documents\frank\school\CSharp\CSharpProjects\GaussianElimination\obj\Debug\net9.0\GaussianElimination.AssemblyInfo.cs
+C:\Users\Student\Documents\frank\school\CSharp\CSharpProjects\GaussianElimination\obj\Debug\net9.0\GaussianElimination.csproj.CoreCompileInputs.cache
+C:\Users\Student\Documents\frank\school\CSharp\CSharpProjects\GaussianElimination\obj\Debug\net9.0\GaussianElimination.sourcelink.json
+C:\Users\Student\Documents\frank\school\CSharp\CSharpProjects\GaussianElimination\obj\Debug\net9.0\GaussianElimination.dll
+C:\Users\Student\Documents\frank\school\CSharp\CSharpProjects\GaussianElimination\obj\Debug\net9.0\refint\GaussianElimination.dll
+C:\Users\Student\Documents\frank\school\CSharp\CSharpProjects\GaussianElimination\obj\Debug\net9.0\GaussianElimination.pdb
+C:\Users\Student\Documents\frank\school\CSharp\CSharpProjects\GaussianElimination\obj\Debug\net9.0\GaussianElimination.genruntimeconfig.cache
+C:\Users\Student\Documents\frank\school\CSharp\CSharpProjects\GaussianElimination\obj\Debug\net9.0\ref\GaussianElimination.dll

@@ -15,7 +15,7 @@ from tabulate import tabulate
 """
 
 # Multi dimensional array/ List
-# See randomizer.py for more details.
+# See randomizer.py for more details. I also made a helper function inspired by randomizer.py.
 item_list = [
     {'id': 1, 'name': 'GeminiJets Boeing 777-300ER Emirates 1/400', 'price': 60, 'quantity': 23},
     {'id': 2, 'name': 'GeminiJets Airbus A350-900 Qatar Airways 1/400', 'price': 60, 'quantity': 22},
@@ -87,7 +87,9 @@ next_id = 65  # For auto-generating IDs
 
 
 def manage_inventory():
-    """Main function to manage the inventory system"""
+    """
+    Main function to manage the inventory system
+    """
     while True:
         print(
             """
