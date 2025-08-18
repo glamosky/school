@@ -1,0 +1,165 @@
+192.168.5.0/16
+
+---First thing to do is check if given number is a network address
+
+###Anding process
+192.168.5.0/ SM:255.255.0.0
+
+---First step convert to binary
+192 = 1100 0000. 168 = 1010 1000. 5 = 0000 0101. 0 = 0000 0000
+
+255 = 1111 1111. 255 = 1111 1111. 0 = 0000 0000. 0 = 0000 0000
+
+---Second step anding process(multiply) to get NA
+1100 0000. 1010 1000. 0000 0101. 0000 0000
+1111 1111. 1111 1111. 0000 0000. 0000 0000
+==========================================
+1100 0000. 1010 1000. 0000 0000. 0000 0000
+
+NA: 192.168.0.0
+
+---Third step inverse Subnet mask 255.255.0.0
+1111 1111. 1111 1111. 0000 0000. 0000 0000
+will turn into
+0000 0000. 0000 0000. 1111 1111. 1111 1111.
+
+convert to decimal: 0.0.255.255
+
+add to NA:
+192 . 168   .   0   .   0
+0   .   0   .   255 .   255
+BA: 192.168.255.255
+
+Last get IP range(which we will get if we add +1 to last octet of NA and -1 to last octet of BA)
+IPR: 192.168.0.1 - 192.168.255.254
+
+
+###Static subnetting(splitting network in a given number)
+Split into 6
+
+---First step is to find a number that 6 can be subtracted to
+
+1 2 4 8 16
+1 1 1 0 0 = 3
+
+we add 3 to the subnet mask of our NA: 192.168.0.0/16 + 3 =19
+Our NA and SM pair will now be: 
+192.168.0.0/19
+
+---Second step find the value of the last 1 binary from our SM:19
+1st octet - 1111 1111. 2nd octet - 1111 1111. 3rd - octet 11\1\0 0000. 4th - octet 0000 0000
+1=32 3rd octet
+
+---Last add the value to our NA depending on what octet we got the value
+192.168.\0\.0
+0+32
+[192.168.0.0/19  
+192.168.32.0/19 
+192.168.64.0/19 
+192.168.96.0/19 
+192.168.128.0/19
+192.168.160.0/19
+] = 6 networks
+192.168.192.0/19
+192.168.224.0/19
+
+### Variable Subnetting(splitting network depending on the number of needed IP)
+10 host
+32 host
+64 host
+2 host
+
+NA:192.168.0.0/16
+
+---first step arrange from highest to lowest
+64
+32
+10
+2
+
+---second step Get the SM for each(its easier to use a calc)
+64 = 7
+32 = 6
+10 = 4
+ 2 = 2
+
+32-7=25
+32-6=26
+32-4=28
+32-2=30
+
+---third step Get NA for each
+64 host = 192.168.0.0/25
+
+--3.1 to get the next NA, get the value of the last binary 1 of our SM(25)
+
+8. 8. 8. \1\000 0000
+1 = 128 4th octet
+
+--3.2 we add this value to our NA to get the next NA
+0+128 =128
+32 host = 192.168.0.128/26
+
+--repeat step 3.1
+
+8. 8. 8. 1\1\00 0000
+1=64
+
+--repeat step 3.2
+128+64 = 192
+10 hosts = 192.168.0.192/28
+
+--repeat step 3.1
+8. 8. 8. 111\1\ 0000
+1=16
+
+--repeat step 3.2
+192+16 = 208
+192.168.0.208/30
+
+
+ALL NAs:
+192.168.0.0/25
+192.168.0.128/26
+192.168.0.192/28
+192.168.0.208/30
+
+to get IPR of each network use Anding process steps
+
+NA:192.168.0.0/25
+SM:255.255.255.128
+BA:192.168.0.127
+IPR:192.168.0.1 - 192.168.0.126
+
+NA:192.168.0.128/26
+SM:255.255.255.192
+BA:192.168.0.191
+IPR:192.168.0.129 - 192.168.0.190
+
+NA:192.168.0.192/28
+SM:255.255.255.240
+BA:192.168.0.207
+IPR:192.168.0.193 - 192.168.0.206
+
+NA:192.168.0.208/30
+SM:255.255.255.252
+BA:192.168.0.211
+IPR:192.168.0.209 - 192.168.0.210
+
+
+Router Setup:
+
+Router>enable
+// To show the port information
+Router#show ip interface brief
+// To enter the configuration mode
+Router#configure terminal
+// To configure the port
+Router(config)#interface gigabitEthernet0/0
+// Add a static IP address and Subnetmask.
+Router(config-if)#ip address 180.16.32.1 255.255.255.224
+// To up the port
+Router(config-if)#no shutdown
+// You have to save the router config
+Router#write 
+Router#copy running-config startup-config
