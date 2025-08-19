@@ -25,5 +25,5 @@ console.log(`From (0,0) to (-5,-10): ${distanceFromOrigin(-5, -10)}`);
 
 // Calculate distances from point (5,5)
 console.log(`From (5,5) to (10,2): ${distanceFromPoint(10, 2)}`);
-console.log(`From (5,5) to (0,1): ${distanceFromPoint(0, 1)}`);
+console.log(`From (5,5) to (0,1): ${distanceFromPoint(0, 1)}`);                                                                         
 console.log(`From (5,5) to (-90,-1): ${distanceFromPoint(-90, -1)}`);
