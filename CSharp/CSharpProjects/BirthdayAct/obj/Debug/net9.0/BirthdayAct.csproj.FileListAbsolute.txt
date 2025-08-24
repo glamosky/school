@@ -1,0 +1,15 @@
+D:\web dev\school\CSharp\CSharpProjects\BirthdayAct\bin\Debug\net9.0\BirthdayAct.exe
+D:\web dev\school\CSharp\CSharpProjects\BirthdayAct\bin\Debug\net9.0\BirthdayAct.deps.json
+D:\web dev\school\CSharp\CSharpProjects\BirthdayAct\bin\Debug\net9.0\BirthdayAct.runtimeconfig.json
+D:\web dev\school\CSharp\CSharpProjects\BirthdayAct\bin\Debug\net9.0\BirthdayAct.dll
+D:\web dev\school\CSharp\CSharpProjects\BirthdayAct\bin\Debug\net9.0\BirthdayAct.pdb
+D:\web dev\school\CSharp\CSharpProjects\BirthdayAct\obj\Debug\net9.0\BirthdayAct.GeneratedMSBuildEditorConfig.editorconfig
+D:\web dev\school\CSharp\CSharpProjects\BirthdayAct\obj\Debug\net9.0\BirthdayAct.AssemblyInfoInputs.cache
+D:\web dev\school\CSharp\CSharpProjects\BirthdayAct\obj\Debug\net9.0\BirthdayAct.AssemblyInfo.cs
+D:\web dev\school\CSharp\CSharpProjects\BirthdayAct\obj\Debug\net9.0\BirthdayAct.csproj.CoreCompileInputs.cache
+D:\web dev\school\CSharp\CSharpProjects\BirthdayAct\obj\Debug\net9.0\BirthdayAct.sourcelink.json
+D:\web dev\school\CSharp\CSharpProjects\BirthdayAct\obj\Debug\net9.0\BirthdayAct.dll
+D:\web dev\school\CSharp\CSharpProjects\BirthdayAct\obj\Debug\net9.0\refint\BirthdayAct.dll
+D:\web dev\school\CSharp\CSharpProjects\BirthdayAct\obj\Debug\net9.0\BirthdayAct.pdb
+D:\web dev\school\CSharp\CSharpProjects\BirthdayAct\obj\Debug\net9.0\BirthdayAct.genruntimeconfig.cache
+D:\web dev\school\CSharp\CSharpProjects\BirthdayAct\obj\Debug\net9.0\ref\BirthdayAct.dll
